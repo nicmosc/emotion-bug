@@ -5,7 +5,7 @@ import Button from '../lib/Button';
 
 
 const styles = {
-  app: css`
+  base: css`
     background: yellow;
   `,
 };
@@ -13,7 +13,7 @@ const styles = {
 
 const App = () => {
   return (
-    <div className={styles.app}>
+    <div className={styles.base}>
       <h1>App example</h1>
       <Button>Imported component</Button>
     </div>
