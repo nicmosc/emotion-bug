@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config webpack.config.js",
+    "build": "NODE_ENV=production webpack --config webpack.config.js",
     "build:commonjs": "babel components/ --out-dir lib/",
     "watch:components": "NODE_ENV=development npm run build:commonjs -- --watch",
     "build:components": "NODE_ENV=production npm run build:commonjs"
